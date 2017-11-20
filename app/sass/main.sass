@@ -40,6 +40,7 @@ html, body
 
 body
 	font-size: 16px
+	max-width: 1600px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
@@ -52,4 +53,41 @@ body
 	max-width: 100%
 	height: auto
 
+.wrapper, .promo__wrapper
+	max-width: 1380px
+	margin: 0 auto
+
+											/* HEADER */
+
+
+.header
+	display: flex
+	flex-direction: row
+
+.header__logo
+	width: 10.5%
+	background-color: #30b5d8
+	font-size: 38px
+	color: #fff
+	text-align: center
+	font-weight: 900
+
+.logo_style
+	color: #000
+	/* margin-left: -10px */
+.header__menu-wrap
+	width: 37.3%
+.header__menu
+	display: flex
+	flex-direction: row
+.menu__link
+	width: 20%
+	text-align: center
+	padding: 3%
+	a
+		color: #000
+		text-dicoration: none
+		display: block
+.header__form
+	width: 48%
 @import "media" // Всегда в конце
