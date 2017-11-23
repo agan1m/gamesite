@@ -125,12 +125,34 @@ img
 
 .promo
 	background: url(../img/bg-top.png) no-repeat
-
+	padding-top: 38%
+	padding-bottom: 6%
+.promo__wrapper
+	position: relative
 .promo__games
 	width: 35%
-	margin: 6% 0
+	margin-top: -36%
 	float: right
 	display: grid
 	grid-template-columns: repeat(3, 1fr)
-	grid-auto-rows: minmax(200px, auto)
+	grid-auto-rows: minmax(89px, auto)
+	position: absolute
+	left: 65%
+
+.promo__info
+	position: absolute
+	left: 53.2%
+	top: 53%
+	width: 31.7%
+	padding: 1.4% 2.5% 1.7% 1.9%
+	background-color: $accent
+	&__text
+		margin-top: 3.5%
+		color: #fff
+		font-size: 18px
+		line-height: 27px
+	&__title
+		font-size: 30px
+		line-height: 41px
+		font-family: "OpenSans-Bold"
 @import "media" // Всегда в конце
