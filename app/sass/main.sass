@@ -322,7 +322,7 @@ img
 
 .games
 	background-color: #2e8a7d
-	padding-bottom: 6%
+	padding-bottom: 6.5%
 .games__top-line
 	padding-top: 1.6%
 .games__title
@@ -391,4 +391,156 @@ img
 	font-size: 30px
 	padding: 2% 2.3%
 	font-family: "OpenSans-ExtraBold"
+
+								/* END GAMES */
+
+								/* TRAILERS */
+
+.trailers
+	background-color: #eae7d6
+	padding-bottom: 1.5%
+.trailers__title
+	@extend .news__title
+
+.trailers__top-line
+	padding-top: 3.2%
+.trailers__title
+	margin-left: 2%
+.trailers__link
+	margin-left: 1.5%
+	font-size: 17px
+	line-height: 55px
+
+.trailers__carousel__page
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	margin-top: 5%
+
+.trailers__item
+	width: 48.5%
+	height: 192px
+	margin-bottom: 3%
+	background-color: #FFF
+.trailers__video
+	float: left
+	width: 49%
+	height: 100%
+.trailers__discrip
+	float: left
+	width: 51%
+	height: 100%
+
+.trailers__text
+	font-size: 20px
+	line-height: 31px
+	letter-spacing: 0.5px
+	padding-left: 7%
+	padding-top: 13%
+.trailers__catigory
+	font-size: 16px
+	padding-left: 7.5%
+	padding-top: 5%
+	color: #b4b4b4
+
+								/* END TRAILERS */
+								/* ARTICLES */
+
+.articles__title
+	@extend .news__title
+	width: 15.5%
+	margin-left: 2%
+
+.articles__top-line
+	margin-top: 3%
+.articles__link
+	line-height: 72px
+	color: #bf2d2d
+.articles__btn
+	float: right
+	width: 15%
+	text-align: center
+	background-color: $accent
+	color: #fff
+	margin-top: 1%
+	border-radius: 20px
+	font-size: 18px
+	line-height: 41px
+.articles__box
+	margin-top: 3%
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+.articles__item
+	width: 32%
+	border: solid 2px #f2f2ef
+	margin-bottom: 3%
+.articles__item__top-line
+	margin-top: 4%
+	height: 70px
+.item__top-line__date
+	float: left
+	width: 31.5%
+	margin-left: -2.5%
+	height: 100%
+	.date
+		float: left
+		width: 50%
+		font-size: 31px
+		color: #fff
+		background-color: $accent
+		text-align: center
+		height: 100%
+	.date__month
+		font-size: 16px
+		margin-top: -23%	
+	.item__top-line__ava
+		float: right
+		width: 50%
+		height: 100%
+		img
+			height: 100%
+
+.item__top-line__author
+	float: right
+	width: 63%
+	margin-right: 4%
+	background-color: #f2f2ef
+	padding-left: 2.5%
+	padding-top: 1%
+	padding-bottom: 3%
+
+.author__nick
+	color: $accent
+	font-family: "OpenSans-Bold"
+.author__stats
+	display: flex
+	flex-direction: row
+	font-size: 14px
+	li
+		padding-left: 6%
+		width: 18%
+
+.item__text__wrap
+	padding: 5.5% 6%
+.articles__item__title
+	font-size: 30px
+	font-family: Times
+	line-height: 30px
+	letter-spacing: 0.6px
+	margin-bottom: 4%
+.articles__item__mind
+	font-size: 17px
+	font-style: italic
+	line-height: 27px
+	margin-bottom: 7%
+	color: #494949
+.articles__item__text
+	font-size: 17px
+	line-height: 26px
+	color: #494949
 @import "media" // Всегда в конце
