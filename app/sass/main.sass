@@ -360,6 +360,8 @@ a
 	padding: 0.6%
 	color: #b4b4b4
 
+
+
 								/* END NEWS */
 
 								/* GAMES */
@@ -394,10 +396,13 @@ a
 .games__carousel
 	margin-top: 3.5%
 	background-color: #FFF
+		
+.games__carousel__page
+	float: left
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
-
+	width: 100%
 .games__carousel__game
 	width: 50%
 	position: relative
@@ -454,14 +459,17 @@ a
 	margin-left: 1.5%
 	font-size: 17px
 	line-height: 55px
-
+.trailers__carousel
+	margin-top: 5%
+	width: 100%
 .trailers__carousel__page
+	float: left
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
 	justify-content: space-between
 	width: 100%
-	margin-top: 5%
+	
 
 .trailers__item
 	width: 48.5%
@@ -503,16 +511,19 @@ a
 .articles__link
 	line-height: 72px
 	color: #bf2d2d
-.articles__btn
+.articles__top-form
 	float: right
 	width: 15%
 	text-align: center
+	margin-top: 1%
+.articles__top-btn
 	background-color: $accent
 	color: #fff
-	margin-top: 1%
 	border-radius: 20px
 	font-size: 18px
 	line-height: 41px
+	border: 0
+	width: 100%
 .articles__box
 	margin-top: 3%
 	display: flex
@@ -620,6 +631,9 @@ a
 	padding: 0.8%
 	border: solid 3px $accent
 	font-size: 24px
+	&:hover
+		background-color: $accent
+		color: #fff
 
 					/* FOOTER */
 
@@ -735,4 +749,6 @@ a
 	font-size: 20px
 	color: #fff
 	padding: 1% 0
+	&:hover
+		background-color: #f7d54a
 @import "media" // Всегда в конце
