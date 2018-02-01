@@ -104,3 +104,7 @@ $(document).ready(function () {
         prevArrow: $('.trailers__arrow_prev')
     });
 });
+
+document.querySelector('.burger').addEventListener('click', function () {
+    burgerMenu.classList.toggle('burger-active');
+});

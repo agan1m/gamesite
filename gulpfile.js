@@ -13,6 +13,10 @@ var gulp           = require('gulp'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
 		rsync          = require('gulp-rsync');
+var 	cssunit 		= require('gulp-css-unit');	
+var postcss = require('gulp-postcss');
+var pxtorem = require('postcss-pxtorem');	
+		
 
 // Пользовательские скрипты проекта
 
@@ -46,12 +50,20 @@ gulp.task('browser-sync', function() {
 		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
 	});
 });
-
+var processors = [
+        pxtorem({
+            replace: true,
+            selectorBlackList: ['max-width'],
+            rootValue: 18,
+            propList: ['font', 'width', 'height', 'font-size', 'line-height', 'letter-spacing']
+        })
+    ];
 gulp.task('sass', function() {
 	return gulp.src('app/sass/**/*.sass')
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
+	//.pipe(postcss(processors))
 	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
@@ -122,6 +134,16 @@ gulp.task('rsync', function() {
 		compress: true
 	}));
 });
+
+gulp.task('rem', function(){
+   
+    gulp.src('app/css/*.css')
+        .pipe(cssunit({
+            type     :    'px-to-rem',
+            rootSize :    16
+        }));
+        //.pipe(gulp.dest('app/css/'));
+    });
 
 gulp.task('removedist', function() { return del.sync('dist'); });
 gulp.task('clearcache', function () { return cache.clearAll(); });
