@@ -104,7 +104,7 @@ $(document).ready(function () {
         prevArrow: $('.trailers__arrow_prev')
     });
 });
-
+var burgerMenu = document.querySelector('.burger-menu');
 document.querySelector('.burger').addEventListener('click', function () {
     burgerMenu.classList.toggle('burger-active');
 });

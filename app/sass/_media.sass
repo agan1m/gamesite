@@ -24,7 +24,7 @@
 	.footer__img
 		width: 42%
 	.contact__form
-		top: 82.5%
+		top: 83.5%
 	.footer__copy
 		font-size: 11px
 	.contact__text
@@ -32,6 +32,9 @@
 	.contact__title
 		margin-top: -0.5%
 	.trailers__video
+		overflow: hidden
+	.promo__info
+		height: 250px
 		overflow: hidden
 	.promo__info__text
 		font-size: 14px
@@ -52,6 +55,7 @@
 		height: auto
 	.box__game__title
 		font-size: 17px
+		line-height: 30px
 	.half-size .box__game__title
 		font-size: 22px
 	.game__tooltip__title
@@ -62,6 +66,10 @@
 		height: 50%
 	.articles__top-btn
 		font-size: 13px
+	.menu__link a
+		font-size: 17px
+	.articles__btn_more
+		font-size: 20px
 @media only screen and (max-width : 768px)
 	.footer__img
 		display: none
@@ -97,7 +105,7 @@
 	.articles__top-btn
 		font-size: 11px
 	.articles__title, .news__title, .trailers__title, .games__title
-		margin-right: 4%
+		margin-right: 10%
 	.news__slide-down
 		font-size: 18px
 	.news__sort-wrap
@@ -106,8 +114,14 @@
 		font-size: 20px
 		line-height: 26px
 	.promo__info
-		height: 220px
+		margin-top: 0
+		width: 100%
+		position: relative
 		overflow: hidden
+		height: auto
+		left: 0
+	.promo
+		padding-bottom: 0
 	.header__menu-wrap
 		display: none
 	.burger
@@ -117,15 +131,69 @@
 	.carousel__game__img
 		display: none
 	.games__carousel__game
-		padding-left: 1%
+		padding-left: 2%
 	.header__form
 		margin-top: 1%
 	.search
 		height: 78%
+	.header__form
+		width: 61%
+	.promo__games
+		grid-auto-rows: minmax(auto,75px)
+		display: none
+	.articles__top-form
+		width: 20%
+	.articles__link
+		line-height: 55px
+@media only screen and (max-width : 640px)
+	.box__game__title
+		line-height: 24px
+	
+	.carousel__game__rating
+		left: 80%
+	.articles__btn_more
+		font-size: 15px
+	.articles__title, .games__title, .news__title, .trailers__title
+		margin-right: 15%
+	.header__logo
+		font-size: 30px
+	.trailers__text
+		font-size: 18px
+		line-height: 25px
+	.articles__btn_more
+		width: 30%
+	.contact__text
+		line-height: 18px
+	.contact__form
+		left: 20%
+		top: 134%
+	.contact__btn
+		width: 45%
+	.header__form
+		width: 67%
+	.promo__info__title
+		font-size: 16px
+		line-height: 19px
+	.promo__info__text
+		font-size: 14px
+		line-height: 20px
+	.promo__info
+		height: 165px
+	.promo__games
+		grid-auto-rows: minmax(auto,65px)
+	.burger-menu
+		top: 57px
+	.news__box
+		grid-template-columns: [col3] 1fr [col4] 1fr
+	.articles__item__mind, .articles__item__text
+		font-size: 14px
+		line-height: 23px
 
 @media only screen and (max-width : 480px)
 	.header__form
-		width: 66%
+		width: 74%
+	.box__game_line
+		height: 3px
 	.header__logo
 		font-size: 28px
 	.promo__info
@@ -157,6 +225,7 @@
 		font-size: 12px
 	.news__box
 		grid-template-rows: 140px 140px 140px
+		grid-template-columns: [col3] 1fr [col4] 1fr
 	.half-size .box__game__title
 		font-size: 14px
 		width: 78%
@@ -192,12 +261,18 @@
 	.contact__text
 		font-size: 10px
 	.footer
-		padding-bottom: 44%
+		padding-bottom: 38%
 	.burger-menu
 		top: 52px
 	.contact__btn
 		font-size: 10px
-@media only screen and (max-width : 320px)
+	.articles__btn_more
+		font-size: 10px
+	.box__game_wrap
+		top: 32%
+	.news__sort-wrap
+		font-size: 14px
+@media only screen and (max-width : 419px)
 	.footer
 		display: none
 	.articles__item__img
